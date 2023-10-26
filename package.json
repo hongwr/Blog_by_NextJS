@@ -11,7 +11,7 @@
   "dependencies": {
     "@types/react-syntax-highlighter": "^15.5.8",
     "next": "13.5.4",
-    "nodemailer": "^6.9.6",
+    "nodemailer": "^6.9.7",
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^4.11.0",
@@ -24,6 +24,7 @@
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.10",
     "@types/node": "^20",
+    "@types/nodemailer": "^6.4.13",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.4.16",
