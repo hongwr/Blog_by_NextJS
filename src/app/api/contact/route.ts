@@ -9,7 +9,7 @@ const bodySchema = yup.object().shape({
 
 export async function POST(req: Request) {
     const body = await req.json();
-    console.log(body);
+    console.log(body, 'bodybodybodybodybody');
     if (!bodySchema.isValidSync(body)) {
         return new Response(JSON.stringify({ message: '메일 전송에 실패함!' }), { status: 400 });
     }

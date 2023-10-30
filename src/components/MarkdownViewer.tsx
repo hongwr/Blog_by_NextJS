@@ -16,7 +16,7 @@ export default function MarkdownViewer({ content }: { content: string }) {
                     const { children, className, node, ...rest } = props;
                     const match = /language-(\w+)/.exec(className || '');
                     return match ? (
-                        <SyntaxHighlighter language={match[1]} PreTag='div' {...rest} style={materialDark}>
+                        <SyntaxHighlighter language={match[1]} PreTag='div' {...rest} style={materialDark} ref={null}>
                             {String(children).replace(/\n$/, '')}
                         </SyntaxHighlighter>
                     ) : (
