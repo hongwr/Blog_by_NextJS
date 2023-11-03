@@ -23,10 +23,12 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <html className={inter.className} lang='en'>
-            <body className='flex flex-col w-full max-w-screen-2xl mx-auto'>
-                <Header />
-                <main className='grow'>{children}</main>
-                <Footer />
+            <body className='overflow-auto'>
+                <div className='w-full max-w-screen-2xl mx-auto flex flex-col'>
+                    <Header />
+                    <main className='grow'>{children}</main>
+                    <Footer />
+                </div>
             </body>
         </html>
     );
